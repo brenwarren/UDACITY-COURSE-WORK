@@ -1,13 +1,32 @@
+
+.header{
+    grid-area:hd;
+  }
+  .footer{
+    grid-area: ft;  
+  }
+  .sidebar{
+    grid-area: sd;
+  }
+  .content{
+    grid-area: main;
+  }
+  .card{
+    grid-area: cd;
+  }
+
+/*For mobile*/
 .grid-container{
     display:grid;
     grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 250px 600px;
+    grid-template-rows: 100px 400px 100px;
     border: 2px solid yellow;
       /* Use grid-template-area to create a mobile layout where each named space occupies its own row */
     grid-template-areas:
       "hd"
-      "sd"
       "main"
+      "sd"
+      "cd"
     "ft";
   }
 
@@ -16,24 +35,14 @@
     .grid-container{
           display:grid;
           grid-template-columns: 300px 300px 300px;
-          grid-template-rows: 250px 600px;
+          grid-template-rows: 100px 500px 225px;
           grid-template-areas: 
           "hd hd hd hd hd hd hd hd"
           "sd sd main main main main main main"
+          "cd cd cd cd cd cd cd cd"
           "ft ft ft ft ft ft ft ft";
           border: 2px solid red;
       }
     }
 
-    .header{
-        grid-area:hd;
-      }
-      .footer{
-        grid-area: ft;  
-      }
-      .sidebar{
-        grid-area: sd;
-      }
-      .content{
-        grid-area: main;
-      }
+   
