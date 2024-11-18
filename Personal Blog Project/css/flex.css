@@ -1,0 +1,18 @@
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally   
+   */
+  }
+  
+  .flex-item {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 100px;
+  }
+
+  
