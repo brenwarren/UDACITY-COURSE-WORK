@@ -2,13 +2,17 @@
 
 @import 'flex.css';
 @import 'grid.css';
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://cdn.jsdelivr.net/npm/milligram@1.4.1/dist/milligram.min.css);
 
 
-
-  
-  .box{
+.box{
       border: 1px solid red;
       background: #F8FA9D;
+      }
+
+ body {
+        font-family: 'Light 300', serif;
       }
   
   
