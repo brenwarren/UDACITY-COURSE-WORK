@@ -16,10 +16,13 @@
   .card1{
     grid-area: cd1;
     background-image: url('../images/purple-hexes.jpg');
+    padding: 20px;
+    
   }
   .card2{
     grid-area: cd2;
     background-image: url('../images/purple-triangles.jpg');
+    
   }
   .card3{
     grid-area: cd3;
@@ -29,7 +32,6 @@
 /*Mobiles*/
 .grid-container{
     display:grid;
-    
     grid-template-rows: 50px 300px 300px;
   
       /* Use grid-template-area to create a mobile layout where each named space occupies its own row */
@@ -47,7 +49,6 @@
   @media(min-width:600px){
     .grid-container{
           display:grid;
-          grid-template-columns: 200px;
           grid-template-rows: 100px 500px 225px;
           grid-template-areas: 
           "hd hd hd hd hd hd hd hd hd"
@@ -56,6 +57,7 @@
           "ft ft ft ft ft ft ft ft ft";
           
       }
+      
     }
 
    
