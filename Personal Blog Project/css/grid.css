@@ -23,7 +23,7 @@
     grid-area: cd3;
   }
 
-/*For mobile*/
+/*Mobiles*/
 .grid-container{
     display:grid;
     
@@ -40,7 +40,7 @@
     "ft";
   }
 
-  /* If Screen Is Wide Enough */
+  /* Desktops*/
   @media(min-width:600px){
     .grid-container{
           display:grid;
