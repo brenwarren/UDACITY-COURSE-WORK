@@ -1,9 +1,8 @@
 .flex-container {
     display: flex;
-    flex-direction: column; /* Arrange items in a column */
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally   
-   */
+    flex-direction: column;  /*Arrange items in a column*/
+    justify-content: center;  /*Center items vertically*/
+    align-items: center;  /*Center items horizontally*/
   }
   
   .flex-item {
