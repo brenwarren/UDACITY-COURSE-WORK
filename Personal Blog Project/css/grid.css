@@ -11,15 +11,23 @@
   .content{
     grid-area: main;
   }
-  .card{
-    grid-area: cd;
+
+  /*3 cards for the 3 cards in a row at the bottom of main index page*/
+  .card1{
+    grid-area: cd1;
+  }
+  .card2{
+    grid-area: cd2;
+  }
+  .card3{
+    grid-area: cd3;
   }
 
 /*For mobile*/
 .grid-container{
     display:grid;
     grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 100px 400px 100px;
+    grid-template-rows: 100px 200px 200px;
     border: 2px solid yellow;
       /* Use grid-template-area to create a mobile layout where each named space occupies its own row */
     grid-template-areas:
@@ -34,13 +42,13 @@
   @media(min-width:900px){
     .grid-container{
           display:grid;
-          grid-template-columns: 300px 300px 300px;
+          grid-template-columns: 230px;
           grid-template-rows: 100px 500px 225px;
           grid-template-areas: 
-          "hd hd hd hd hd hd hd hd"
-          "sd sd main main main main main main"
-          "cd cd cd cd cd cd cd cd"
-          "ft ft ft ft ft ft ft ft";
+          "hd hd hd hd hd hd hd hd hd"
+          "sd sd sd sd sd main main main main"
+          "cd1 cd1 cd1 cd2 cd2 cd2 cd3 cd3 cd3"
+          "ft ft ft ft ft ft ft ft ft";
           border: 2px solid red;
       }
     }
