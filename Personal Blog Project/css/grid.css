@@ -4,6 +4,7 @@
   }
   .footer{
     grid-area: ft;  
+    margin-top: 50px;
   }
   .sidebar{
     grid-area: sd;
@@ -16,17 +17,22 @@
   .card1{
     grid-area: cd1;
     background-image: url('../images/purple-hexes.jpg');
-    padding: 20px;
+    margin-top: 20px;
+   
+   
     
   }
   .card2{
     grid-area: cd2;
     background-image: url('../images/purple-triangles.jpg');
+    margin-top: 30px;
     
   }
   .card3{
     grid-area: cd3;
     background-image: url('../images/purple-wavy.jpg');
+    margin-top: 40px;
+   
   }
 
 /*Mobiles*/
@@ -43,19 +49,31 @@
       "cd2"
       "cd3"
     "ft";
+    
   }
 
   /* Desktops*/
-  @media(min-width:600px){
+  @media(min-width:700px){
     .grid-container{
           display:grid;
+          
           grid-template-rows: 100px 500px 225px;
           grid-template-areas: 
           "hd hd hd hd hd hd hd hd hd"
-          "sd sd sd sd sd main main main main"
+          "sd sd sd sd main main main main main"
           "cd1 cd1 cd1 cd2 cd2 cd2 cd3 cd3 cd3"
-          "ft ft ft ft ft ft ft ft ft";
-          
+          "ft ft ft ft ft ft ft ft ft";  
+      }
+      .grid-container .card2{
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+      .grid-container .card3{
+        margin-left: 40px;
+        margin-top: 20px;
+        margin-right: 60px;
+        padding-right: 20px;
+
       }
       
     }
