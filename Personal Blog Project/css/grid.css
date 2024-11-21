@@ -1,10 +1,10 @@
 
 .grid-container {
   display:grid;
-  grid-template-rows: 50px 300px 300px;
+  grid-template-rows: 50px 300px auto;
   grid-template-areas:
     "hd"
-    "sd"
+    "ip"
     "ct"
     "cd1"
     "cd2"
@@ -19,10 +19,10 @@
   .grid-container{
     display:grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 50px 400px auto auto;
+    grid-template-rows: 50px auto auto auto;
     grid-template-areas: 
     "hd hd hd hd hd hd"
-    "sd sd sd ct ct ct"
+    "ip ip ip ct ct ct"
     "cd1 cd1 cd2 cd2 cd3 cd3"
     "ft ft ft ft ft ft"; 
     grid-gap: 15px; 
