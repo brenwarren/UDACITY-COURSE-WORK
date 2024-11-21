@@ -1,81 +1,33 @@
 
-.header{
-    grid-area:hd;
-  }
-  .footer{
-    grid-area: ft;  
-    margin-top: 50px;
-  }
-  .sidebar{
-    grid-area: sd;
-  }
-  .content{
-    grid-area: main;
-  }
+.grid-container {
+  display:grid;
+  grid-template-rows: 50px 300px 300px;
+  grid-template-areas:
+    "hd"
+    "sd"
+    "ct"
+    "cd1"
+    "cd2"
+    "cd3"
+  "ft";
+  grid-gap: 10px;
+  margin: 0 auto;
+}
 
-  /*3 cards for the 3 cards in a row at the bottom of main index page*/
-  .card1{
-    grid-area: cd1;
-    background-image: url('../images/purple-hexes.jpg');
-    margin-top: 20px;
-   
-   
-    
-  }
-  .card2{
-    grid-area: cd2;
-    background-image: url('../images/purple-triangles.jpg');
-    margin-top: 30px;
-    
-  }
-  .card3{
-    grid-area: cd3;
-    background-image: url('../images/purple-wavy.jpg');
-    margin-top: 40px;
-   
-  }
-
-/*Mobiles*/
-.grid-container{
+/* Desktops*/
+@media(min-width:700px) {
+  .grid-container{
     display:grid;
-    grid-template-rows: 50px 300px 300px;
-  
-      /* Use grid-template-area to create a mobile layout where each named space occupies its own row */
-    grid-template-areas:
-      "hd"
-      "main"
-      "sd"
-      "cd1"
-      "cd2"
-      "cd3"
-    "ft";
-    
-  }
-
-  /* Desktops*/
-  @media(min-width:700px){
-    .grid-container{
-          display:grid;
-          
-          grid-template-rows: 100px 500px 225px;
-          grid-template-areas: 
-          "hd hd hd hd hd hd hd hd hd"
-          "sd sd sd sd main main main main main"
-          "cd1 cd1 cd1 cd2 cd2 cd2 cd3 cd3 cd3"
-          "ft ft ft ft ft ft ft ft ft";  
-      }
-      .grid-container .card2{
-        margin-left: 20px;
-        margin-top: 20px;
-      }
-      .grid-container .card3{
-        margin-left: 40px;
-        margin-top: 20px;
-        margin-right: 60px;
-        padding-right: 20px;
-
-      }
-      
-    }
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px 400px auto auto;
+    grid-template-areas: 
+    "hd hd hd hd hd hd"
+    "sd sd sd ct ct ct"
+    "cd1 cd1 cd2 cd2 cd3 cd3"
+    "ft ft ft ft ft ft"; 
+    grid-gap: 15px; 
+    max-width: 1200px;
+  } 
+}
 
    

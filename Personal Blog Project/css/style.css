@@ -6,70 +6,75 @@
 @import 'flex.css';
 @import 'grid.css';
 
-
-
-.content{
-  background-color: #4c9173;
-      padding: 20px;
-      border-top-left-radius: 20px;
-      border-bottom-left-radius: 0;
-      border-top-right-radius: 20px; 
-      border-bottom-right-radius: 0;
+.header {
+  background-color: #d9f2ff;
+  grid-area:hd;
 }
 
-button{
-  background-color: #4c9173;
+img {      
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*Image fills whole container without changing shape (crops to fit)*/
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 0; 
+  border-bottom-right-radius: 20px;
+  padding-bottom: 0px;
 }
-/*
-.box{
-      border-radius: 20px;
-      margin-bottom: 0;
-      margin-right: 10px;
-      padding-bottom: 50px;
-      
-      }*/
 
-body{
-        font-family: 'Light 300', serif;
-        background: #5b446a; 
-        padding-left: 20px;
-        padding-right: 20px;
-      }
+.sidebar {
+  grid-area: sd;
+}
 
-img {
-        
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /*Image fills whole container without changing shape (crops to fit)*/
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 20px;
-        border-top-right-radius: 0; 
-        border-bottom-right-radius: 20px;
-        padding-bottom: 0px;
-    }
+.content {
+  grid-area: ct;
+  background-color: #a5bdfd;
+  padding: 20px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 20px; 
+  border-bottom-right-radius: 0;
+}
+.footer {
+  background-color: #d9f2ff;
+  grid-area: ft;  
+}
+
+body {
+ 
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+
+
   /* Desktops*/
-@media(min-width:700px){
-    body{
-        padding-left: 70px;
-        padding-right: 70px;
-    }
-    /*For larger displays, squares off the right hand side (instead of the top, as per mobile displays) of the main blog intro image on home page */
-    img{
-      border-top-left-radius: 20px;
-      border-bottom-left-radius: 20px;
-      border-top-right-radius: 0; 
-      border-bottom-right-radius: 0;
-    }
-    .content{
-      background-color: #4c9173;
-      border-radius: 20px;
-      padding: 20px;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      border-top-right-radius: 20px; 
-      border-bottom-right-radius: 20px;
-    }
-
+@media(min-width:700px) {
+  body{
+    padding: 10px 70px;
+      /*padding-left: 70px;
+      padding-right: 70px;*/
   }
+
+  /*For larger displays, squares off the right hand side (instead of the top, as per mobile displays) of the main blog intro image on home page */
+  img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0;
+  }
+
+  .content{
+    border-radius: 20px;
+    padding: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px;
+    
+  }
+
+}
     
   
