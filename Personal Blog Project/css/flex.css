@@ -1,15 +1,11 @@
 .flex-container {
     display: flex;
     width: 100%;
-  }
+}
   
-  .flex-item {
-    width: 200px;
-    height: 100px;
-    margin: 10px;
-    background-color: lightblue;
-    text-align: center;
-    line-height: 100px;
-  }
-
+.author-bio {
+  display: flex;
+  height: fit-content;
+  margin-bottom: 50px;
+}
   

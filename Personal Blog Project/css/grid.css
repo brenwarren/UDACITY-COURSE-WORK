@@ -1,4 +1,4 @@
-
+/*Home page grid*/
 .grid-container {
   display:grid;
   grid-template-rows: 50px 300px auto;
@@ -12,6 +12,25 @@
   "ft";
   grid-gap: 10px;
   margin: 0 auto;
+  min-width: 320px;
+}
+
+/*Blog page grid*/
+.blog-grid-container {
+  display:grid;
+  grid-template-rows: 50px 300px auto;
+  grid-template-areas:
+    "hd"
+    "ab"
+    "ip"
+    "ct"
+    "cd1"
+    "cd2"
+    "cd3"
+  "ft";
+  grid-gap: 10px;
+  margin: 0 auto;
+  min-width: 320px;
 }
 
 /* Desktops*/
@@ -26,7 +45,20 @@
     "cd1 cd1 cd2 cd2 cd3 cd3"
     "ft ft ft ft ft ft"; 
     grid-gap: 15px; 
-    max-width: 1200px;
+    max-width: 1600px;
+  } 
+  .blog-grid-container{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px auto auto auto;
+    grid-template-areas: 
+    "hd hd hd hd hd hd"
+    "ab ab ab ab ab ab"
+    "ip ip ip ct ct ct"
+    "cd1 cd1 cd2 cd2 cd3 cd3"
+    "ft ft ft ft ft ft"; 
+    grid-gap: 15px; 
+    max-width: 1600px;
   } 
 }
 

@@ -1,46 +1,56 @@
-/* Mobile First Layout */
-.container{
-    display:grid;
-    grid-template-columns: 300px 300px 300px ;
-    grid-template-rows: 250px 600px;
-    border: 2px solid blue;
-  /* Use grid-template-area to create a mobile layout where each named space occupies its own row */
-  grid-template-areas: 
-  "hd"
-  "feat"
-  "main"
-  "ft";
+/* Mobile first */
+
+@import 'style.css'; /*Styles inherited from style.css and in turn style.css inherits from other style sheets*/
+
+.author-bio {
+  grid-area: ab;
+  padding-bottom: 0px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 80px;
 }
-.box{
-  border: 5px solid red;
-  background: #F8FA9D;
+
+.author-avatar {
+  margin-right: 20px;
+}
+
+.author-avatar img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.author-info {
+  flex-grow: 1;
+}
+
+.social-links a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #007bff;
+}
+
+/* Desktops*/
+@media(min-width:700px) {
+  .author-bio {
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
-
-.header{
-    grid-area: hd;
+  .content {
+    margin-top: 0;
+  }
+  .img-panel {
+    margin-top: 0px;
+  }
 }
 
-.footer{
-  grid-area: ft;  
-}
-.feature{
-  grid-area: feat;
-}
-.content{
-  grid-area: main;
-}
 
-/* If wide enough */
-@media(min-width:900px){
-    .container{
-      display:grid;
-      grid-template-columns: min-content(300px auto);
-      grid-template-rows: 250px 600px;
-      grid-template-areas: 
-      "hd hd hd hd hd hd hd hd"
-      "feat feat feat feat main main main main"
-      "ft ft ft ft ft ft ft ft";
-      border: 2px solid yellow;
-    }
-}
+    
+  
 
