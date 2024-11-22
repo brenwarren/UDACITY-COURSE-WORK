@@ -4,12 +4,10 @@
 
 .author-bio {
   grid-area: ab;
-  padding-bottom: 0px;
   margin-top: 20px;
   display: flex;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 80px;
 }
 
 .author-avatar {
