@@ -1,4 +1,19 @@
- /*3 cards for the 3 cards in a row at the bottom of main index page*/
+ /*Styling for the 3 smaller cards on the home index page*/
+
+ .card {
+    
+  border-radius: 20px;
+  padding: 15px;
+  position: relative; /*Sets the reference point for position of the buttons on the cards. See related "absolute" position 
+  of the card-button class below*/
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  background-size: cover;  
+  color: white;
+  box-shadow: 0 6px 6px grey;
+}
+ 
  .card1 {
   grid-area: cd1;
   background-image: url('../images/purple-hexes.jpg'); 
@@ -14,17 +29,11 @@
   background-image: url('../images/purple-wavy.jpg'); 
 }
 
-.card {
-    
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  height: 100%;
-  background-size: cover;  
-    
+.card-button {
+  position: absolute;
+  bottom: 0;
 }
-  
+    
 .card-header {
   font-size: 18px;
   font-weight: bold;
@@ -35,16 +44,9 @@
   margin-bottom: 10px;
 }
 
-.card-footer {
-  text-align: center;
-}
-
 @media(min-width:700px) {
   .card {
     border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%;
     height: 100%;
     background-size: cover;  
   }
