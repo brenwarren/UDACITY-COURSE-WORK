@@ -33,6 +33,57 @@
   min-width: 320px;
 }
 
+.blog-grid-container-2 {
+  display:grid;
+  grid-template-rows: 50px 300px auto;
+  grid-template-areas:
+    "hd"
+    "ab"
+    "ip"
+    "ct"
+    "cd0"
+    "cd2"
+    "cd3"
+  "ft";
+  grid-gap: 15px;
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+.blog-grid-container-3 {
+  display:grid;
+  grid-template-rows: 50px 300px auto;
+  grid-template-areas:
+    "hd"
+    "ab"
+    "ip"
+    "ct"
+    "cd0"
+    "cd1"
+    "cd3"
+  "ft";
+  grid-gap: 15px;
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+.blog-grid-container-4 {
+  display:grid;
+  grid-template-rows: 50px 300px auto;
+  grid-template-areas:
+    "hd"
+    "ab"
+    "ip"
+    "ct"
+    "cd0"
+    "cd1"
+    "cd2"
+  "ft";
+  grid-gap: 15px;
+  margin: 0 auto;
+  min-width: 320px;
+}
+
 /* Desktops*/
 @media(min-width:700px) {
   .grid-container{
@@ -56,6 +107,45 @@
     "ab ab ab ab ab ab"
     "ip ip ip ct ct ct"
     "cd1 cd1 cd2 cd2 cd3 cd3"
+    "ft ft ft ft ft ft"; 
+    grid-gap: 15px; 
+    max-width: 1600px;
+  } 
+  .blog-grid-container-2{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px auto auto auto;
+    grid-template-areas: 
+    "hd hd hd hd hd hd"
+    "ab ab ab ab ab ab"
+    "ip ip ip ct ct ct"
+    "cd0 cd0 cd2 cd2 cd3 cd3"
+    "ft ft ft ft ft ft"; 
+    grid-gap: 15px; 
+    max-width: 1600px;
+  } 
+  .blog-grid-container-3{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px auto auto auto;
+    grid-template-areas: 
+    "hd hd hd hd hd hd"
+    "ab ab ab ab ab ab"
+    "ip ip ip ct ct ct"
+    "cd0 cd0 cd1 cd1 cd3 cd3"
+    "ft ft ft ft ft ft"; 
+    grid-gap: 15px; 
+    max-width: 1600px;
+  } 
+  .blog-grid-container-4{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px auto auto auto;
+    grid-template-areas: 
+    "hd hd hd hd hd hd"
+    "ab ab ab ab ab ab"
+    "ip ip ip ct ct ct"
+    "cd0 cd0 cd1 cd1 cd2 cd2"
     "ft ft ft ft ft ft"; 
     grid-gap: 15px; 
     max-width: 1600px;

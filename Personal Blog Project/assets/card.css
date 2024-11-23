@@ -14,6 +14,11 @@
   box-shadow: 0 6px 6px grey;
 }
  
+.card0 {
+  grid-area: cd0;
+  background-image: url('../assets/purple-lines.jpg'); 
+}
+
  .card1 {
   grid-area: cd1;
   background-image: url('../assets/purple-hexes.jpg'); 
