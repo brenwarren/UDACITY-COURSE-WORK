@@ -16,17 +16,17 @@
  
  .card1 {
   grid-area: cd1;
-  background-image: url('../images/purple-hexes.jpg'); 
+  background-image: url('../assets/purple-hexes.jpg'); 
 }
 
 .card2 {
   grid-area: cd2;
-  background-image: url('../images/purple-triangles.jpg');
+  background-image: url('../assets/purple-triangles.jpg');
  
 }
 .card3 {
   grid-area: cd3;
-  background-image: url('../images/purple-wavy.jpg'); 
+  background-image: url('../assets/purple-wavy.jpg'); 
 }
 
 .card-button {
