@@ -1,10 +1,9 @@
 /*Home page grid*/
 .grid-container {
   display:grid;
-  grid-template-rows: 50px 300px auto;
+  grid-template-rows: 50px auto auto;
   grid-template-areas:
     "hd"
-    "ip"
     "ct"
     "ab"
     "cd1"
@@ -97,9 +96,9 @@ to the other blog pages at the bottom of each page have slightly different conte
     grid-template-rows: 50px 500px auto auto;
     grid-template-areas: 
     "hd hd hd hd hd hd"
-    "ip ip ip ct ct ct"
-    "ab ab ab cd1 cd1 cd1"
-    "cd2 cd2 cd2 cd3 cd3 cd3"
+    "ct ct ct ct ct ct"
+    "cd1 cd1 cd1 cd2 cd2 cd2"
+    "cd3 cd3 cd3 ab ab ab"
     "ft ft ft ft ft ft"; 
     grid-gap: 15px; 
     max-width: 1600px;

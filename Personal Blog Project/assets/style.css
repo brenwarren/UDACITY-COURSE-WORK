@@ -76,15 +76,37 @@ img {
 .content {
   grid-area: ct;
   background-color: #a5bdfd;
-  background-image: url("nebula-background.jpg");
-  background-size: cover;
+  background-image: url("purple-lines.jpg");
   color: white;
   padding: 20px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 20px;
   border-top-right-radius: 0; 
   border-bottom-right-radius: 20px;
-  box-shadow: 0 6px 6px grey;
+}
+
+.content a {
+  color: white;
+}
+
+.content a:hover {
+  color: grey;
+}
+
+.grid-container .content {
+  border-radius: 20px;
+}
+
+.blog-grid-container-2 .content {
+  background-image: url('purple-hexes.jpg');
+}
+
+.blog-grid-container-3 .content {
+  background-image: url('purple-triangles.jpg');
+}
+
+.blog-grid-container-4 .content {
+  background-image: url('purple-wavy.jpg');
 }
 
 /*Author bio styling*/
@@ -169,7 +191,6 @@ button {
     border-bottom-left-radius: 20px;
     border-top-right-radius: 0; 
     border-bottom-right-radius: 0;
-    box-shadow: 0 6px 6px grey;
   }
 
   .content{
