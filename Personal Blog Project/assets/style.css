@@ -1,10 +1,13 @@
 /* Mobile first */
 
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+/*Styling imported from Milligram CDN as design system - This effects all fonts on the site*/
 @import url(https://cdn.jsdelivr.net/npm/milligram@1.4.1/dist/milligram.min.css);
+
+/*Font Awesome styling imported via CDN - Used for social media badges on author bio's*/
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+
 @import 'card.css';
-@import 'flex.css';
 @import 'grid.css';
 
 
@@ -68,12 +71,14 @@ img {
 .img-panel {
   grid-area: ip;
   padding-bottom: 0px;
-  margin-top: 30px;
 }
 
 .content {
   grid-area: ct;
   background-color: #a5bdfd;
+  background-image: url("nebula-background.jpg");
+  background-size: cover;
+  color: white;
   padding: 20px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 20px;
@@ -81,6 +86,49 @@ img {
   border-bottom-right-radius: 20px;
   box-shadow: 0 6px 6px grey;
 }
+
+/*Author bio styling*/
+
+.author-bio {
+  grid-area: ab;
+  display: flex; /*Flexbox with fit-content height used to keep author bio within 
+  the area whilst port size changes */
+  height: 100%;
+  padding-top: 20px;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+.author-avatar {
+  margin-right: 10px;
+}
+
+.author-avatar img {
+  border-radius: 20%;
+  width: 80px;
+  height: 80px;
+}
+
+.author-info {
+  flex-grow: 1;
+}
+
+input {
+  max-width: 200px;
+}
+
+button {
+  max-width: 130px;
+}
+
+.img-panel {
+  margin-top: 170px;
+}
+
+.grid-container .img-panel {
+  margin-top: 0;
+}
+
 
 /*Compensates for effect of an imported style to keep <a> links visible against their backrounds. (Eg the button and social media links)*/
 .card-body a {
@@ -107,7 +155,7 @@ img {
   text-align: right;
 }
 
-  /* Desktops*/
+  /*Larger screens*/
 
 @media(min-width:700px) {
   body{
@@ -116,16 +164,12 @@ img {
 
   /*For larger displays, squares off the right hand side (instead of the top, as per mobile displays) of the main blog intro image on home page */
   
-  img {
+  .img-panel img {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 0; 
     border-bottom-right-radius: 0;
     box-shadow: 0 6px 6px grey;
-  }
-
-  .img-panel {
-    margin-top: 20px;
   }
 
   .content{
@@ -135,6 +179,10 @@ img {
     border-top-right-radius: 20px; 
     border-bottom-right-radius: 20px;
     margin-top: 20px;
+  }
+
+  .img-panel {
+    margin-top: 0;
   }
 
   .blog-title {
@@ -156,6 +204,23 @@ img {
   .content p {
     font-size: 1.2em;
   }
+
+  /*Author bio styling for larger screens*/
+
+  .author-bio {
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .grid-container .author-bio {
+    padding-top: 0;
+  }
+
+  .content {
+    margin-top: 0;
+  }
+ 
 
 }
     

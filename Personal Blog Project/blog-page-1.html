@@ -7,11 +7,11 @@
       content="width=device-width, initial-scale=1, maximum-scale=1"
       name="viewport"
     />
-    <link rel="stylesheet" href="assets/blog-page.css">
+    <link rel="stylesheet" href="assets/style.css">
   </head>
 
   <body>
-    <div class = "blog-grid-container flex-container">
+    <div class = "blog-grid-container">
       <div class="header">
         <h1 class="blog-title">Cosmic Dance of Light</h1>
         <nav>
@@ -22,29 +22,38 @@
         </nav>
       </div> 
 
+<!--Authors biography at the top of each blog page -->
+
       <div class="author-bio">
         <div class="author-avatar">
           <img src="assets/Avatar-bren.jpg" alt="Author Avatar">
         </div>
         <div class="author-info">
-          <h2>Bren Warren</h2>
+          <h2><strong>Author:</strong>Bren Warren</h2>
           <p>Web Developer at Acme Corp</p>
           <p>Having retired from NASA at the age of eight, Bren took up his other creative passion as a front end developer.<br>
-            The unique combination of skills has been used to create something intriguing. Weird, but intriguing.</p>   
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-          </div>
+            The unique combination of skills has been used to create something intriguing. Weird, but intriguing.</p>
+            <strong>Receive more updates from this author:</strong>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <form action="#" method="post">
+              <input type="email" name="email" placeholder="Enter your email address">
+              <br><button type="submit">Subscribe</button>
+            </form>
         </div>
-      </div>   
+      </div>
+
+<!--Main page content(text plus an image) -->
 
       <div class="img-panel">
         <img src="assets/purple-lines.jpg" alt="purple-lines">
       </div>
 
       <div class="content">
-        <h1>Cosmic Dance of Light</h1>
+        <h1>Cosmic dance of light</h1>
         <p>Light, the fundamental force that illuminates our world, embarks on an extraordinary journey through the vast expanse of space. Unlike sound waves, which require a medium like air or water to propagate, light can traverse the vacuum of space unimpeded.<br><br>
 
           The Nature of Light:<br><br>
@@ -68,6 +77,7 @@
         
       </div>  
       
+      <!--Cards across the bottom of the page to other blog pages -->
       <div class="card card1">
         <div class="card-header">
           <h1>Cosmic Overview</h1>

@@ -1,14 +1,13 @@
- /*Styling for the 3 smaller cards on the home index page*/
+ /*Styling for the 3 smaller cards on all pages*/
 
  .card {
-    
   border-radius: 20px;
   padding: 15px;
   position: relative; /*Sets the reference point for position of the buttons on the cards. See related "absolute" position 
   of the card-button class below*/
   display: flex;
   flex-direction: column;
-  height: fit-content;
+  height: 100%;
   background-size: cover;  
   color: white;
   box-shadow: 0 6px 6px grey;
@@ -47,12 +46,4 @@
 
 .card-body {
   margin-bottom: 10px;
-}
-
-@media(min-width:700px) {
-  .card {
-    border-radius: 20px;
-    height: 100%;
-    background-size: cover;  
-  }
 }

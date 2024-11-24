@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/Udacity-frontenddev-html-intro/index.html"
+    "livePreview.defaultPreviewPath": "/Udacity-frontenddev-html-intro/index.html",
+    "workbench.colorTheme": "Default Dark+"
 }

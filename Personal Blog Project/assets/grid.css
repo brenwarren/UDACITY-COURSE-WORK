@@ -6,6 +6,7 @@
     "hd"
     "ip"
     "ct"
+    "ab"
     "cd1"
     "cd2"
     "cd3"
@@ -15,7 +16,10 @@
   min-width: 320px;
 }
 
-/*Blog page grid*/
+/*Blog page grid styling.
+Each blog page requires a slightly different grid because the 3 cards pointing
+to the other blog pages at the bottom of each page have slightly different content. 
+*/
 .blog-grid-container {
   display:grid;
   grid-template-rows: 50px 300px auto;
@@ -84,16 +88,18 @@
   min-width: 320px;
 }
 
-/* Desktops*/
+/*Larger screens*/
+
 @media(min-width:700px) {
   .grid-container{
     display:grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 50px auto auto auto;
+    grid-template-rows: 50px 500px auto auto;
     grid-template-areas: 
     "hd hd hd hd hd hd"
     "ip ip ip ct ct ct"
-    "cd1 cd1 cd2 cd2 cd3 cd3"
+    "ab ab ab cd1 cd1 cd1"
+    "cd2 cd2 cd2 cd3 cd3 cd3"
     "ft ft ft ft ft ft"; 
     grid-gap: 15px; 
     max-width: 1600px;
