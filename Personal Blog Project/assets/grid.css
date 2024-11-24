@@ -111,7 +111,7 @@ to the other blog pages at the bottom of each page have slightly different conte
     grid-template-areas: 
     "hd hd hd hd hd hd"
     "ab ab ab ab ab ab"
-    "ip ip ip ct ct ct"
+    "ip ip ct ct ct ct"
     "cd1 cd1 cd2 cd2 cd3 cd3"
     "ft ft ft ft ft ft"; 
     grid-gap: 15px; 
@@ -124,7 +124,7 @@ to the other blog pages at the bottom of each page have slightly different conte
     grid-template-areas: 
     "hd hd hd hd hd hd"
     "ab ab ab ab ab ab"
-    "ip ip ip ct ct ct"
+    "ip ip ct ct ct ct"
     "cd0 cd0 cd2 cd2 cd3 cd3"
     "ft ft ft ft ft ft"; 
     grid-gap: 15px; 
@@ -137,7 +137,7 @@ to the other blog pages at the bottom of each page have slightly different conte
     grid-template-areas: 
     "hd hd hd hd hd hd"
     "ab ab ab ab ab ab"
-    "ip ip ip ct ct ct"
+    "ip ip ct ct ct ct"
     "cd0 cd0 cd1 cd1 cd3 cd3"
     "ft ft ft ft ft ft"; 
     grid-gap: 15px; 
@@ -150,7 +150,7 @@ to the other blog pages at the bottom of each page have slightly different conte
     grid-template-areas: 
     "hd hd hd hd hd hd"
     "ab ab ab ab ab ab"
-    "ip ip ip ct ct ct"
+    "ip ip ct ct ct ct"
     "cd0 cd0 cd1 cd1 cd2 cd2"
     "ft ft ft ft ft ft"; 
     grid-gap: 15px; 
