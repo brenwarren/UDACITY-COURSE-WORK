@@ -96,19 +96,19 @@ nav li:hover .dropdown {
 }
 
 .blog-grid-container .img-panel {
-  background-image: url("../imgs/purple-lines.jpg");
+  background-image: url("/imgs/purple-lines.jpg");
 }
 
 .blog-grid-container-2 .img-panel {
-  background-image: url("../imgs/purple-hexes.jpg");
+  background-image: url("/imgs/purple-hexes.jpg");
 }
 
 .blog-grid-container-3 .img-panel {
-  background-image: url("../imgs/purple-triangles.jpg");
+  background-image: url("/imgs/purple-triangles.jpg");
 }
 
 .blog-grid-container-4 .img-panel {
-  background-image: url("../imgs/purple-wavy.jpg");
+  background-image: url("/imgs/purple-wavy.jpg");
 }
 
 /*Main text content panel on home page and blog posts*/
@@ -128,26 +128,26 @@ nav li:hover .dropdown {
 /*Home page large content panel*/
 
 .grid-container .content {
-  background-image: url("../imgs/purple-lines.jpg");
+  background-image: url('/imgs/purple-lines.jpg');
   border-radius: 20px;
 }
 
 /*Blog post pages text content panels*/
 
 .blog-grid-container .content {
-  background-image: url("../imgs/purple-lines.jpg");
+  background-image: url('/imgs/purple-lines.jpg');
 }
 
 .blog-grid-container-2 .content {
-  background-image: url('../imgs/purple-hexes.jpg');
+  background-image: url('/imgs/purple-hexes.jpg');
 }
 
 .blog-grid-container-3 .content {
-  background-image: url('../imgs/purple-triangles.jpg');
+  background-image: url('/imgs/purple-triangles.jpg');
 }
 
 .blog-grid-container-4 .content {
-  background-image: url('../imgs/purple-wavy.jpg');
+  background-image: url('/imgs/purple-wavy.jpg');
 }
 
 /*Compensates for effect of an imported style to keep <a> links visible against their backrounds. (Eg the button and social media links)*/
