@@ -3,8 +3,6 @@
  .card {
   border-radius: 20px;
   padding: 15px;
-  position: relative; /*Sets the reference point for position of the buttons on the cards. See related "absolute" position 
-  of the card-button class below*/
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -32,11 +30,6 @@
   grid-area: cd3;
   background-image: url('../assets/purple-wavy.jpg'); 
 }
-
-.card-button {
-  position: absolute;
-  bottom: 0;
-}
     
 .card-header {
   font-size: 18px;
@@ -46,4 +39,8 @@
 
 .card-body {
   margin-bottom: 10px;
+}
+
+.post-link p {
+  content: "This is the inserted text.";
 }

@@ -86,11 +86,11 @@ img {
 }
 
 .content a {
-  color: white;
+  color: rgb(168, 202, 195);
 }
 
-.content a:hover {
-  color: grey;
+a:hover {
+  color: white;
 }
 
 .grid-container .content {

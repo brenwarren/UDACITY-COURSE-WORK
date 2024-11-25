@@ -5,10 +5,10 @@
   grid-template-areas:
     "hd"
     "ct"
-    "ab"
     "cd1"
     "cd2"
     "cd3"
+    "ab"
   "ft";
   grid-gap: 10px;
   margin: 0 auto;
