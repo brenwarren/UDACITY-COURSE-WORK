@@ -96,19 +96,19 @@ nav li:hover .dropdown {
 }
 
 .blog-grid-container .img-panel {
-  background-image: url("/imgs/purple-lines.jpg");
+  background-image: url('/imgs/purple-lines.jpg');
 }
 
 .blog-grid-container-2 .img-panel {
-  background-image: url("/imgs/purple-hexes.jpg");
+  background-image: url('/imgs/purple-hexes.jpg');
 }
 
 .blog-grid-container-3 .img-panel {
-  background-image: url("/imgs/purple-triangles.jpg");
+  background-image: url('/imgs/purple-triangles.jpg');
 }
 
 .blog-grid-container-4 .img-panel {
-  background-image: url("/imgs/purple-wavy.jpg");
+  background-image: url('/imgs/purple-wavy.jpg');
 }
 
 /*Main text content panel on home page and blog posts*/
