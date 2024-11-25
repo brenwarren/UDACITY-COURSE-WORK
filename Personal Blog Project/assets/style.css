@@ -125,11 +125,19 @@ nav li {
 
 /*Compensates for effect of an imported style to keep <a> links visible against their backrounds. (Eg the button and social media links)*/
 
-a {
+.content a {
   color: rgb(168, 202, 195);
 }
 
-a:hover {
+.content a:hover {
+  color: white;
+}
+
+.card a {
+  color: rgb(168, 202, 195);
+}
+
+.card a:hover {
   color: white;
 }
 
