@@ -1,7 +1,6 @@
 /*Grid styling*/
 
 .grid {
-  display:grid;
   grid-gap: 10px;
   margin: 0 auto;
   min-width: 320px;
@@ -9,6 +8,7 @@
 
 /*Home page grid styling*/
 .grid-container {
+  display:grid;
   grid-template-rows: 50px auto auto;
   grid-template-areas:
     "hd"
@@ -25,6 +25,7 @@ Each blog page requires a slightly different grid because the 3 cards pointing
 to the other blog pages at the bottom of each page have slightly different content.*/
 
 .blog-grid-container {
+  display:grid;
   grid-template-rows: 50px 300px auto;
   grid-template-areas:
     "hd"
@@ -38,6 +39,7 @@ to the other blog pages at the bottom of each page have slightly different conte
 }
 
 .blog-grid-container-2 {
+  display:grid;
   grid-template-rows: 50px 300px auto;
   grid-template-areas:
     "hd"
@@ -51,6 +53,7 @@ to the other blog pages at the bottom of each page have slightly different conte
 }
 
 .blog-grid-container-3 {
+  display:grid;
   grid-template-rows: 50px 300px auto;
   grid-template-areas:
     "hd"
@@ -64,6 +67,7 @@ to the other blog pages at the bottom of each page have slightly different conte
 }
 
 .blog-grid-container-4 {
+  display:grid;
   grid-template-rows: 50px 300px auto;
   grid-template-areas:
     "hd"
@@ -94,6 +98,7 @@ to the other blog pages at the bottom of each page have slightly different conte
 /*Home page grid styling for larger screens*/
 
   .grid-container{
+    display:grid;
     grid-template-rows: 50px 500px auto auto;
     grid-template-areas: 
     "hd hd hd hd hd hd"
@@ -106,6 +111,7 @@ to the other blog pages at the bottom of each page have slightly different conte
   /*Blog post pages grid styling*/
 
   .blog-grid-container{
+    display:grid;
     grid-template-areas: 
     "hd hd hd hd hd hd"
     "ab ab ab ab ab ab"
@@ -115,6 +121,7 @@ to the other blog pages at the bottom of each page have slightly different conte
   } 
 
   .blog-grid-container-2{
+    display:grid;
     grid-template-areas: 
     "hd hd hd hd hd hd"
     "ab ab ab ab ab ab"
@@ -124,6 +131,7 @@ to the other blog pages at the bottom of each page have slightly different conte
   } 
 
   .blog-grid-container-3{
+    display:grid;
     grid-template-areas: 
     "hd hd hd hd hd hd"
     "ab ab ab ab ab ab"
@@ -133,6 +141,7 @@ to the other blog pages at the bottom of each page have slightly different conte
   } 
 
   .blog-grid-container-4{
+    display:grid;
     grid-template-areas: 
     "hd hd hd hd hd hd"
     "ab ab ab ab ab ab"
