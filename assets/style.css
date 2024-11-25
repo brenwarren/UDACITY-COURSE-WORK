@@ -155,6 +155,7 @@ nav a:hover {
   grid-area: ab;
   display: flex; /*Flexbox with fit-content height used to keep author bio within 
   the area whilst port size changes */
+  height: fit-content;
   height: 100%;
   padding-top: 20px;
   margin-bottom: 0;
