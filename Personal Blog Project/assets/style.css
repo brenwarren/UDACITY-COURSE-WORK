@@ -47,6 +47,8 @@ p {
   margin-bottom: 10px;
 }
 
+/*Navigation styling*/
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -58,39 +60,51 @@ nav li {
   padding-left: 20px;
 }
 
-img {      
+/*Image panel next to blog post content*/
+
+.blog-grid-container .img-panel {
+  background-image: url("purple-lines.jpg");
+}
+
+.blog-grid-container-2 .img-panel {
+  background-image: url("purple-hexes.jpg");
+}
+
+.blog-grid-container-3 .img-panel {
+  background-image: url("purple-triangles.jpg");
+}
+
+.blog-grid-container-4 .img-panel {
+  background-image: url("purple-wavy.jpg");
+}
+
+.img-panel {
+  grid-area: ip;
+  padding: 20px;
+  color: white;
+ font-size: 1.5em;
   width: 100%;
-  height: 100%;
+  height: 90px;
   object-fit: cover; /*Image fills whole container without changing shape (crops to fit)*/
+  background-attachment: fixed;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 0;
   border-top-right-radius: 20px; 
   border-bottom-right-radius: 0;
 }
 
-.img-panel {
-  grid-area: ip;
-  padding-bottom: 0px;
-}
+/*Main text content panel in blog posts*/
 
 .content {
   grid-area: ct;
-  background-color: #a5bdfd;
   background-image: url("purple-lines.jpg");
+  background-attachment: fixed;
   color: white;
   padding: 20px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 20px;
   border-top-right-radius: 0; 
   border-bottom-right-radius: 20px;
-}
-
-.content a {
-  color: rgb(168, 202, 195);
-}
-
-a:hover {
-  color: white;
 }
 
 .grid-container .content {
@@ -108,6 +122,26 @@ a:hover {
 .blog-grid-container-4 .content {
   background-image: url('purple-wavy.jpg');
 }
+
+/*Compensates for effect of an imported style to keep <a> links visible against their backrounds. (Eg the button and social media links)*/
+
+a {
+  color: rgb(168, 202, 195);
+}
+
+a:hover {
+  color: white;
+}
+
+nav a {
+  color: purple;
+}
+
+nav a:hover {
+  color: red;
+}
+
+
 
 /*Author bio styling*/
 
@@ -151,16 +185,6 @@ button {
   margin-top: 0;
 }
 
-
-/*Compensates for effect of an imported style to keep <a> links visible against their backrounds. (Eg the button and social media links)*/
-.card-body a {
-  color: pink;
-}
-
-.card-body a:hover {
-  color: grey;
-}
-
 .footer {
   background-color: #d9f2ff;
   grid-area: ft;  
@@ -177,33 +201,13 @@ button {
   text-align: right;
 }
 
-  /*Larger screens*/
+/*----------------------------------------------
+*LARGER SCREENS*
+------------------------------------------------*/
 
 @media(min-width:700px) {
   body{
     padding: 10px 70px;
-  }
-
-  /*For larger displays, squares off the right hand side (instead of the top, as per mobile displays) of the main blog intro image on home page */
-  
-  .img-panel img {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 0; 
-    border-bottom-right-radius: 0;
-  }
-
-  .content{
-    padding: 20px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 20px; 
-    border-bottom-right-radius: 20px;
-    margin-top: 20px;
-  }
-
-  .img-panel {
-    margin-top: 0;
   }
 
   .blog-title {
@@ -225,6 +229,29 @@ button {
   .content p {
     font-size: 1.2em;
   }
+  
+  /*Image panel next to blog post content*/
+
+  .img-panel {
+    margin-top: 0;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0;
+    padding: 20px;
+  }
+ 
+/*Main text content panel in blog posts*/
+
+  .content{
+    padding: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px;
+    margin-top: 0;
+  }
 
   /*Author bio styling for larger screens*/
 
@@ -237,11 +264,6 @@ button {
   .grid-container .author-bio {
     padding-top: 0;
   }
-
-  .content {
-    margin-top: 0;
-  }
- 
 
 }
     

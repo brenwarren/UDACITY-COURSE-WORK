@@ -1,6 +1,14 @@
-/*Home page grid*/
-.grid-container {
+/*Grid styling*/
+
+.grid {
   display:grid;
+  grid-gap: 10px;
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+/*Home page grid styling*/
+.grid-container {
   grid-template-rows: 50px auto auto;
   grid-template-areas:
     "hd"
@@ -10,17 +18,13 @@
     "cd3"
     "ab"
   "ft";
-  grid-gap: 10px;
-  margin: 0 auto;
-  min-width: 320px;
 }
 
 /*Blog page grid styling.
 Each blog page requires a slightly different grid because the 3 cards pointing
-to the other blog pages at the bottom of each page have slightly different content. 
-*/
+to the other blog pages at the bottom of each page have slightly different content.*/
+
 .blog-grid-container {
-  display:grid;
   grid-template-rows: 50px 300px auto;
   grid-template-areas:
     "hd"
@@ -31,13 +35,9 @@ to the other blog pages at the bottom of each page have slightly different conte
     "cd2"
     "cd3"
   "ft";
-  grid-gap: 15px;
-  margin: 0 auto;
-  min-width: 320px;
 }
 
 .blog-grid-container-2 {
-  display:grid;
   grid-template-rows: 50px 300px auto;
   grid-template-areas:
     "hd"
@@ -48,13 +48,9 @@ to the other blog pages at the bottom of each page have slightly different conte
     "cd2"
     "cd3"
   "ft";
-  grid-gap: 15px;
-  margin: 0 auto;
-  min-width: 320px;
 }
 
 .blog-grid-container-3 {
-  display:grid;
   grid-template-rows: 50px 300px auto;
   grid-template-areas:
     "hd"
@@ -65,13 +61,9 @@ to the other blog pages at the bottom of each page have slightly different conte
     "cd1"
     "cd3"
   "ft";
-  grid-gap: 15px;
-  margin: 0 auto;
-  min-width: 320px;
 }
 
 .blog-grid-container-4 {
-  display:grid;
   grid-template-rows: 50px 300px auto;
   grid-template-areas:
     "hd"
@@ -82,17 +74,26 @@ to the other blog pages at the bottom of each page have slightly different conte
     "cd1"
     "cd2"
   "ft";
-  grid-gap: 15px;
-  margin: 0 auto;
-  min-width: 320px;
 }
 
-/*Larger screens*/
+/*----------------------------------------------
+*LARGER SCREENS*
+------------------------------------------------*/
 
 @media(min-width:700px) {
-  .grid-container{
-    display:grid;
+
+/*Grid styling for larger screens*/
+
+  .grid {
     grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px; 
+    max-width: 1600px;
+    grid-template-rows: 50px auto auto auto;
+  }
+
+/*Home page grid styling for larger screens*/
+
+  .grid-container{
     grid-template-rows: 50px 500px auto auto;
     grid-template-areas: 
     "hd hd hd hd hd hd"
@@ -100,60 +101,44 @@ to the other blog pages at the bottom of each page have slightly different conte
     "cd1 cd1 cd1 cd2 cd2 cd2"
     "cd3 cd3 cd3 ab ab ab"
     "ft ft ft ft ft ft"; 
-    grid-gap: 15px; 
-    max-width: 1600px;
   } 
+
+  /*Blog post pages grid styling*/
+
   .blog-grid-container{
-    display:grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 50px auto auto auto;
     grid-template-areas: 
     "hd hd hd hd hd hd"
     "ab ab ab ab ab ab"
-    "ip ip ct ct ct ct"
+    "ip ct ct ct ct ct"
     "cd1 cd1 cd2 cd2 cd3 cd3"
     "ft ft ft ft ft ft"; 
-    grid-gap: 15px; 
-    max-width: 1600px;
   } 
+
   .blog-grid-container-2{
-    display:grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 50px auto auto auto;
     grid-template-areas: 
     "hd hd hd hd hd hd"
     "ab ab ab ab ab ab"
-    "ip ip ct ct ct ct"
+    "ip ct ct ct ct ct"
     "cd0 cd0 cd2 cd2 cd3 cd3"
     "ft ft ft ft ft ft"; 
-    grid-gap: 15px; 
-    max-width: 1600px;
   } 
+
   .blog-grid-container-3{
-    display:grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 50px auto auto auto;
     grid-template-areas: 
     "hd hd hd hd hd hd"
     "ab ab ab ab ab ab"
-    "ip ip ct ct ct ct"
+    "ip ct ct ct ct ct"
     "cd0 cd0 cd1 cd1 cd3 cd3"
     "ft ft ft ft ft ft"; 
-    grid-gap: 15px; 
-    max-width: 1600px;
   } 
+
   .blog-grid-container-4{
-    display:grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 50px auto auto auto;
     grid-template-areas: 
     "hd hd hd hd hd hd"
     "ab ab ab ab ab ab"
-    "ip ip ct ct ct ct"
+    "ip ct ct ct ct ct"
     "cd0 cd0 cd1 cd1 cd2 cd2"
     "ft ft ft ft ft ft"; 
-    grid-gap: 15px; 
-    max-width: 1600px;
   } 
 }
 

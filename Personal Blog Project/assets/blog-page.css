@@ -1,0 +1,47 @@
+/* Mobile first */
+
+@import 'style.css'; /*Styles inherited from style.css and in turn style.css inherits from other style sheets*/
+
+.author-bio {
+  grid-area: ab;
+  display: flex; /*Flexbox with fit-content height used to keep author bio within 
+  the area whilst port size changes */
+  height: fit-content;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.author-avatar {
+  margin-right: 20px;
+}
+
+.author-avatar img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.author-info {
+  flex-grow: 1;
+}
+
+/*Larger screens*/
+
+@media(min-width:700px) {
+  .author-bio {
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .content {
+    margin-top: 0;
+  }
+  .img-panel {
+    margin-top: 0px;
+  }
+}
+
+
+    
+  
+

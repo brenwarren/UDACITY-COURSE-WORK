@@ -10,6 +10,16 @@
   color: white;
   box-shadow: 0 6px 6px grey;
 }
+
+.card-body {
+  margin-bottom: 10px;
+}
+
+.card-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
  
 .card0 {
   grid-area: cd0;
@@ -31,16 +41,3 @@
   background-image: url('../assets/purple-wavy.jpg'); 
 }
     
-.card-header {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.card-body {
-  margin-bottom: 10px;
-}
-
-.post-link p {
-  content: "This is the inserted text.";
-}
