@@ -23,21 +23,21 @@
  
 .card0 {
   grid-area: cd0;
-  background-image: url('../assets/purple-lines.jpg'); 
+  background-image: url('../imgs/purple-lines.jpg'); 
 }
 
  .card1 {
   grid-area: cd1;
-  background-image: url('../assets/purple-hexes.jpg'); 
+  background-image: url('../imgs/purple-hexes.jpg'); 
 }
 
 .card2 {
   grid-area: cd2;
-  background-image: url('../assets/purple-triangles.jpg');
+  background-image: url('../imgs/purple-triangles.jpg');
  
 }
 .card3 {
   grid-area: cd3;
-  background-image: url('../assets/purple-wavy.jpg'); 
+  background-image: url('../imgs/purple-wavy.jpg'); 
 }
     
