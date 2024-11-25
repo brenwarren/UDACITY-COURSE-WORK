@@ -93,7 +93,7 @@ nav li {
   background-image: url("purple-wavy.jpg");
 }
 
-/*Main text content panel in blog posts*/
+/*Main text content panel on home page and blog posts*/
 
 .content {
   grid-area: ct;
@@ -106,9 +106,17 @@ nav li {
   border-bottom-right-radius: 20px;
 }
 
+/*Home page large content panel*/
+
 .grid-container .content {
   background-image: url("purple-lines.jpg");
   border-radius: 20px;
+}
+
+/*Blog post pages text content panels*/
+
+.blog-grid-container .content {
+  background-image: url("purple-lines.jpg");
 }
 
 .blog-grid-container-2 .content {
