@@ -1,7 +1,3 @@
-/* Mobile first */
-
-@import 'style.css'; /*Styles inherited from style.css and in turn style.css inherits from other style sheets*/
-
 .author-bio {
   grid-area: ab;
   display: flex; /*Flexbox with fit-content height used to keep author bio within 

@@ -9,6 +9,7 @@
 
 @import 'card.css';
 @import 'grid.css';
+@import 'blog-page.css';
 
 
 body {
@@ -118,7 +119,6 @@ nav li:hover .dropdown {
   background-attachment: fixed;
   color: white;
   padding: 20px;
-  margin-top: 40px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 20px;
   border-top-right-radius: 0; 
@@ -130,6 +130,7 @@ nav li:hover .dropdown {
 .grid-container .content {
   background-image: url('/imgs/purple-lines.jpg');
   border-radius: 20px;
+  margin-top: 40px;
 }
 
 /*Blog post pages text content panels*/
@@ -284,7 +285,6 @@ button {
     border-bottom-left-radius: 0;
     border-top-right-radius: 20px; 
     border-bottom-right-radius: 20px;
-    margin-top: 0;
   }
 
   /*Author bio styling for larger screens*/
