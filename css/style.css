@@ -84,6 +84,7 @@ nav li:hover .dropdown {
 .img-panel {
   grid-area: ip;
   padding: 20px;
+  margin-top: 170px;
   color: white;
   font-size: 1.5em;
   width: 100%;
@@ -94,6 +95,10 @@ nav li:hover .dropdown {
   border-bottom-left-radius: 0;
   border-top-right-radius: 20px; 
   border-bottom-right-radius: 0;
+}
+
+.grid-container .img-panel {
+  margin-top: 0;
 }
 
 .blog-grid-container .img-panel {
@@ -111,6 +116,7 @@ nav li:hover .dropdown {
 .blog-grid-container-4 .img-panel {
   background-image: url('../imgs/purple-wavy.jpg');
 }
+
 
 /*Main text content panel on home page and blog posts*/
 
@@ -204,6 +210,8 @@ nav a:hover {
   flex-grow: 1;
 }
 
+/*Styling for Subscribe function*/
+
 input {
   max-width: 200px;
 }
@@ -212,13 +220,7 @@ button {
   max-width: 130px;
 }
 
-.img-panel {
-  margin-top: 170px;
-}
-
-.grid-container .img-panel {
-  margin-top: 0;
-}
+/*Footer styling*/
 
 .footer {
   background-color: #d9f2ff;
